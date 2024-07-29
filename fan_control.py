@@ -65,9 +65,6 @@ try:
             pinState = True
             GPIO.output(controlPin, pinState)
 
-        sleep(1)
-        rpm = (pulse_count / 2) * (60 / interval)
-
         data = {
             "Temperature": temp,
             "Fan State": 'On' if pinState else 'Off',
@@ -76,6 +73,9 @@ try:
         
         write_json("current.json", data)
         print(f"Temperature: {temp}°C, Fan State: {'On' if pinState else 'Off'}, RPM: {rpm}, Mode: {mode}, TempOn: {tempOn}, TempOff: {tempOff}")
+        
+        sleep(1)
+        rpm = (pulse_count / 2) * (60 / interval)
         
 
 except KeyboardInterrupt:
