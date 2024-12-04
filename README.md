@@ -9,13 +9,13 @@ simple-rpi-fan is a simple and effective solution for controlling a fan on your 
 1. Clone the simple-rpi-fan repository to your RPi.
 
    ```
-   git clone https://github.com/Vasysik/simple-rpi-fan.git /path/to/simple-rpi-fan
+   git clone https://github.com/Vasysik/simple-rpi-fan.git /opt/simple-rpi-fan
    ```
 
 2. Install the simple-rpi-fan service.
 
    ```
-   sudo cp /path/to/simple-rpi-fan/fan_control.service /etc/systemd/system/
+   sudo cp /opt/simple-rpi-fan/fan_control.service /etc/systemd/system/
    sudo systemctl daemon-reload
    sudo systemctl enable fan_control.service
    sudo systemctl start fan_control.service
