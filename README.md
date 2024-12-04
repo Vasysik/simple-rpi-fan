@@ -17,8 +17,8 @@ simple-rpi-fan is a simple and effective solution for controlling a fan on your 
    ```
    sudo cp /path/to/simple-rpi-fan/fan_control.service /etc/systemd/system/
    sudo systemctl daemon-reload
-   sudo systemctl enable simple_rpi_fan.service
-   sudo systemctl start simple_rpi_fan.service
+   sudo systemctl enable fan_control.service
+   sudo systemctl start fan_control.service
    ```
 
 ## Hardware Setup
