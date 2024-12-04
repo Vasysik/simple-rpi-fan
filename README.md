@@ -15,7 +15,7 @@ simple-rpi-fan is a simple and effective solution for controlling a fan on your 
 2. Install the simple-rpi-fan service.
 
    ```
-   sudo cp /path/to/simple-rpi-fan/simple_rpi_fan.service /etc/systemd/system/
+   sudo cp /path/to/simple-rpi-fan/fan_control.service /etc/systemd/system/
    sudo systemctl daemon-reload
    sudo systemctl enable simple_rpi_fan.service
    sudo systemctl start simple_rpi_fan.service
